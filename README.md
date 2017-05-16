@@ -1,5 +1,5 @@
-##Writeup Template
-###You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
+## Writeup Template
+### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
 
 ---
 [//]: # (Image References)
@@ -77,7 +77,7 @@ First, I determined the colorspace used for the spacial features and color histo
 
 Colorspace|Avg Accuracy
 --- | ---
-** RGB ** | ** 0.982 **
+**RGB** | **0.982**
 HSV | 0.976
 LUV | 0.977
 HLS | 0.970
