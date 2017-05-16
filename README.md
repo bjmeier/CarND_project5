@@ -142,11 +142,11 @@ Because little accruacy was gained by using a lower `C` value, the same `C` valu
 
 #### 1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
 
-I used 64x64 and 128x128 windows. I used an overlap of 25%. I searched the right side of the image.  The ystart value is 392 pixels.  The 64x64 windows included three verticle steps and the 128x128 windows searched four vertical steps. Images are searched in the code blocks under the Add windows... and Find cars.. blocks.  These sizes and search areas did a good job of overing the area of interest.  The 25% overlap provided a good balance between speed and search precision.  Because I am using 8 x8 hog blocks, moving two at a time aided ease of implementation and performance speed.
+I used 64x64 and 128x128 windows. I used an overlap of 25%. I searched the right side of the image.  The `ystart` value is 392 pixels.  The 64x64 windows included three verticle steps and the 128x128 windows searched four vertical steps. Images are searched in the code blocks under the Add windows... and Find cars.. blocks.  These sizes and search areas did a good job of overing the area of interest.  The 25% overlap provided a good balance between speed and search precision.  Because I am using 8 x8 hog blocks, moving two at a time aided ease of implementation and performance speed.
 
 #### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
-Ultimately I searched on the above two scales using YUV plus gray 4-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
+Ultimately I searched on the above two scales using `YUV` plus `Gray` 4-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
 
 ![alt text][image10]
 ![alt text][image11]
@@ -162,7 +162,7 @@ Descriptions of thresholds and filter used to prevent false positives are given 
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
 
-Here's a link to my video result.  This video was generated a a rate slightly greater than 3 frames per second on a laptop c an Intel 7th Generation i5 core.
+Here's a link to my video result.  This video was generated a a rate slightly greater than 3 frames per second on a laptop with an Intel 7th Generation i5 core.
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/5PX58LZ7aZQ/0.jpg)](http://www.youtube.com/watch?v=5PX58LZ7aZQ "Project Video")
 
