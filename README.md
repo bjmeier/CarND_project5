@@ -89,7 +89,7 @@ Pixel Size | Bin Size | Avg Accuracy
 --- | --- | ----
 16x16 | 32 | 0.985
 32x32 | 32 | 0.982
-** 8x8 ** | ** 32 ** | ** 0.990 **
+**8x8** | **32** | **0.990**
 4x4 | 32 | 0.986
 
 Based on the accuracy given above, an 8x8 pixel size was selected. Histogram bin size was then investigated.
@@ -97,7 +97,7 @@ Based on the accuracy given above, an 8x8 pixel size was selected. Histogram bin
 Pixel Size | Bin Size | Avg Accuracy
 --- | --- | ----
 8x8 | 16 | 0.973
-** 8x8 ** | ** 32 ** | ** 0.990 **
+**8x8** | **32** | **0.990**
 8x8 | 64 | 0.988
 
 Based on the accuracy given above, a 32 bin histogram was selected.
@@ -112,7 +112,7 @@ RGB | 0.963
 HSV | 0.982
 LUV | 0.984
 HLS | 0.983
-** YUV ** | ** 0.988 ** 
+**YUV** | **0.988** 
 YCrCb | 0.986
 
 Based on the above table, the `YUV` colorspace was selected.  Due to a difficulty in detecting white cars, the `Gray` colorspace was added.
@@ -128,7 +128,7 @@ C | Accuracy | Training Time (s)
 --- | --- | ---
 0.0001 | 0.929 | 52.0
 0.001 | 0.930 | 32.2
-** 0.01 ** | ** 0.927 ** | ** 19.8 **
+**0.01** | **0.927** | **19.8**
 0.1 | 0.916 | 16.5
 1 | 0.915 | 16.1
 10 | 0.913 | 16.8
@@ -164,6 +164,8 @@ Descriptions of thresholds and filter used to prevent false positives are given 
 
 Here's a link to my video result.  This video was generated a a rate slightly greater than 3 frames per second on a laptop c an Intel 7th Generation i5 core.
 
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/5PX58LZ7aZQ/0.jpg)](http://www.youtube.com/watch?v=5PX58LZ7aZQ "Project Video")
+
  [![link to my video result](http://img.youtube.com/vi/5PX58LZ7aZQ/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_5PX58LZ7aZQ)
 
 
@@ -177,7 +179,7 @@ Here's an example result showing the heatmap from a series of frames of video, t
 
 To show how this works as a function of time, I created a video.  This video shows the detected cars in blue.  Black boarders indicate uncertain (close to the decision line).  Blue lines indicated more certain car detections.  Detected cars are shown by the red border.  A link to this video is given below. 
 
- [![link to my video result](http://img.youtube.com/vi/vHNPEkrmA5Q/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_vHNPEkrmA5Q)
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/vHNPEkrmA5Q/0.jpg)](http://www.youtube.com/watch?v=vHNPEkrmA5Q "Detection Inputs and Vehicle Detection")
 
 ---
 
