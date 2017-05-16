@@ -102,7 +102,7 @@ Pixel Size | Bin Size | Avg Accuracy
 
 Based on the accuracy given above, a 32 bin histogram was selected.
 
-For the HOG features, I used the same ones referenced in the [original paper](http://vc.cs.nthu.edu.tw/home/paper/codfiles/hkchiu/201205170946/Histograms%20of%20Oriented%20Gradients%20for%20Human%20Detection.pdf) by Dalal and Triggs. These are 8x8 pixels per bin, 8x8 bins per image, 9 orientations 'L2-Hys' normalization. 
+For the HOG features, I used the same ones referenced in the [original paper](http://vc.cs.nthu.edu.tw/home/paper/codfiles/hkchiu/201205170946/Histograms%20of%20Oriented%20Gradients%20for%20Human%20Detection.pdf) by Dalal and Triggs. These are 8x8 pixels per bin, 8x8 bins per image, 9 orientations `L2-Hys` normalization. 
 
 To determine the colorspace, I used the code in lesson 34, Search and Classify. I used the above pixel sizes, histogram bins and the `RGB` color space. Using 0, 10, 20, 30 and 40 random states, the average accuracies are given in the below table.
 
