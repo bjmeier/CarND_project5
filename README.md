@@ -71,7 +71,7 @@ Here is an example using the `YUV` color space and HOG parameters of `orientatio
 #### 2. Explain how you settled on your final choice of HOG parameters.
 
 
-I used the code in lesson 28, Color Classify' to determine the color space as well as the and size of the spacial and color histogram features.
+I used the code in lesson 28, Color Classify to determine the color space as well as the and size of the spacial and color histogram features.
 
 First, I determined the colorspace used for the spacial features and color histogram features by investigating the random states of 0, 10, 20, 30 and 40 while keeping a 32x32 pixel size a 32 bin histogram. 
 
